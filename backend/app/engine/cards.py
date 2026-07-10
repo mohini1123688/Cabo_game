@@ -1,47 +1,157 @@
-import numpy as np
-from collections import deque
+import random
+from dataclasses import dataclass, field
 
+suits = ["Heart", "Spade", "Club", "Diamond"]
+values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+@dataclass
 class Card:
-    def __init__(self, suit, value):
-        self.suit = suit
-        self.value = value
+    value: int
+    suit: str
 
-deck_stack = deque()
-discard_pile = deque()
-# Deck with all 4 suits
-deck = np.array([
-    # Hearts
-    [Card("H", 1), Card("H", 2), Card("H", 3), Card("H", 4), Card("H", 5), 
-     Card("H", 6), Card("H", 7), Card("H", 8), Card("H", 9), Card("H", 10), 
-     Card("H", 11), Card("H", 12), Card("H", 13)],
-    # Clubs
-    [Card("C", 1), Card("C", 2), Card("C", 3), Card("C", 4), Card("C", 5), 
-     Card("C", 6), Card("C", 7), Card("C", 8), Card("C", 9), Card("C", 10), 
-     Card("C", 11), Card("C", 12), Card("C", 13)],
-    # Spades
-    [Card("S", 1), Card("S", 2), Card("S", 3), Card("S", 4), Card("S", 5), 
-     Card("S", 6), Card("S", 7), Card("S", 8), Card("S", 9), Card("S", 10), 
-     Card("S", 11), Card("S", 12), Card("S", 13)],
-    # Diamonds
-    [Card("D", 1), Card("D", 2), Card("D", 3), Card("D", 4), Card("D", 5), 
-     Card("D", 6), Card("D", 7), Card("D", 8), Card("D", 9), Card("D", 10), 
-     Card("D", 11), Card("D", 12), Card("D", 13)]
-])
-def shuffle_deck(deck):
-    return np.random.permutation(deck.flatten()).reshape(deck.shape)
+@dataclass
+class Deck:
+    game_state: "Game_State"
+    cards: list = field(default_factory=list)
 
-def create_stack(deck):
-    for card_type in deck:
-        for card in card_type:
-            deck_stack.append(card)
-            print("appended!")
-            print(f"{card.value}")
+    def __post_init__(self):
+        self.create_deck()
+        self.shuffle_deck()
+        self.game_state.deck_order = self.cards
 
-def draw_card(deck_stack):
-    discard_pile.append(deck_stack.pop())
-    print(f"drawn card {discard_pile[0]}")
+    def create_deck(self):
+        for suit_type in suits:
+            for value in values:
+                self.cards.append(Card(value, suit_type))
+    
+    def shuffle_deck(self):
+        random.shuffle(self.cards)
 
-shuffled = shuffle_deck(deck)
-stack = create_stack(shuffled)
-draw_card(stack)
-print(discard_pile.pop())
+@dataclass
+class Player:
+    name: str
+    game_state: "Game_State"
+    hand: list = field(default_factory=list)
+    total: int = 0
+
+    def pick_up_card(self):
+        card = self.game_state.deck_order.pop()
+    
+    def look_at_own_card(self, card_chosen):
+        print(f'Own card: {card_chosen}')
+    
+    def look_at_opponent_card(self, card_chosen, owner):
+        print(f'{self.game_state.players[owner]} card: {card_chosen}')
+
+@dataclass
+class Opponent(Player):
+    def play_turn(self):
+        print("played turn")
+
+@dataclass
+class Game_State:
+    players: list = field(default_factory=list)
+    game_winner: str = ""
+    current_turn_number: int = 1
+    current_turn_player: int = 0
+    discard_pile: list = field(default_factory=list) # []
+    deck_order: list = field(default_factory=list)
+    react: bool = False
+    power_time: bool = False
+
+    def __post_init__(self):
+            self.players = [
+                Player("Player1", self),
+                Player("Opponent1", self),
+                Player("Opponent2", self),
+                Player("Opponent3", self)
+            ]
+
+    def deal_cards(self):
+        for index, player in enumerate(self.players):
+            for card in range(4):
+                self.players[index].total = self.players[index].total + self.deck_order[-1]
+                self.players[index].hand.append(self.deck_order.pop())
+    
+    def discard_chosen(self, new_card):
+        self.discard_pile.append(new_card)
+
+    def swap_card_picked(self, choice, new_card):
+        self.discard_pile.append(self.players[self.current_turn_player].hand[choice])
+        self.players[self.current_turn_player].hand[choice] = new_card
+    
+    def game_finished(self, player_who_called):
+        min_score = min(player.total for player in self.players)
+        winners = [player.name for player in self.players if player.total == min_score]
+        while len(winners) != 1:
+            if player_who_called in winners:
+                winners.remove(player_who_called)
+            min_number_of_cards = min(len(player.hand) for player in winners)
+            winners = [player.name for player in self.players if player.total == min_number_of_cards]
+            winners.remove(random.choice(winners))
+            winners.remove(random.choice(winners))
+            
+        self.game_winner = winners[0]
+        print(f"Winner is... {self.game_winner}")
+
+def main():
+    game_state = Game_State()
+    game_deck = Deck(game_state)
+
+    #for card in game_state.deck_order:
+            #print(f'{card.value} of {card.suit}')
+
+    print(f'Initial card count: {len(game_state.deck_order)}')
+
+    game_state.deal_cards()
+
+    print(f'After cards dealt: {len(game_state.deck_order)}')
+
+    print("START GAME")
+    print(f"Turn number: {game_state.current_turn_number}")
+    print(f"{game_state.players[game_state.current_turn_player].name} Turn")
+    print(f'Revealed Cards {game_state.players[0].hand[2]} and {game_state.players[0].hand[3]}')
+
+    choice = input("Would you like to call Cabo? (y/n)")
+    print(f"You chose: {choice}")
+    if choice == 'y':
+        game_state.game_finished(game_state.players[game_state.current_turn_player].name)
+
+    new_card = game_state.players[0].pick_up_card()
+    print(new_card)
+
+    choice = input("Would you like to swap or discard? (s/d)")
+    print(f"You chose: {choice}")
+
+    if choice == 'd':
+        game_state.discard_chosen(new_card)
+    if choice =='s':
+        choice = int(input("What card would you like to swap with? Top-left(0) Top-right(1) Bottom-left(2) Bottom-right(3)"))
+        game_state.swap_card_picked(choice, new_card) #performs discard
+    
+    game_state.react = True
+    #Runs out after 10 seconds
+    #each player can click their card or someone else's to have one less card
+    #if u click wrong u get a penalty card (yours or opponent), if u had clicked an opponents card their card is not revealed if u clicked wrong
+    #if u clicked opponent card right, you get to give them one of ur cards
+
+    game_state.react = False
+    #if u discarded a power card here you get to use it
+    if game_state.discard_pile[-1] >7:
+        game_state.power_time = True
+    '''
+    if game_state.discard_pile[-1] == 7 or 8:
+        choice = input("Which of YOUR cards would you like to look at")
+    if game_state.discard_pile[-1] == 9 or 10:
+        choice = input("Which of YOUR OPPONENTS cards would you like to look at")
+    if game_state.discard_pile[-1] == 11:
+        print("turn skipped")
+    if game_state.discard_pile[-1] == 12:
+        print("blind swap")
+    if game_state.discard_pile[-1] == 13:
+        print("seen swap")
+    '''
+    game_state.power_time = False
+    
+if __name__ == "__main__":
+    main()
