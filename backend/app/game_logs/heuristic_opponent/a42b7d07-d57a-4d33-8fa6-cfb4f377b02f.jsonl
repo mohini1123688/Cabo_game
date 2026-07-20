@@ -1,0 +1,12 @@
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7995071, "event_type": "game_start", "seed": 55454020}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7996151, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 5, "card2_suit": "Spade", "card3_value": 3, "card3_suit": "Heart"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.799647, "event_type": "initial_reveal", "player": "Random1", "card2_value": 6, "card2_suit": "Heart", "card3_value": 11, "card3_suit": "Diamond"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7997634, "event_type": "initial_reveal", "player": "Random2", "card2_value": 3, "card2_suit": "Diamond", "card3_value": 9, "card3_suit": "Diamond"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7997847, "event_type": "initial_reveal", "player": "Random3", "card2_value": 1, "card2_suit": "Club", "card3_value": 6, "card3_suit": "Spade"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7997944, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.799809, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 4, "drawn_card_suit": "Diamond"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.799827, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 4, "discarded_card_suit": "Heart", "new_own_card_value": 4, "new_own_card_suit": "Diamond", "swapped_index": 2}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7998455, "event_type": "player_found_own_match", "player": "Heuristic0", "card_discarded_value": 4, "card_discarded_suit": "Diamond"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7998576, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7998667, "event_type": "called_cabo", "player": "Random1"}
+{"game_id": "a42b7d07-d57a-4d33-8fa6-cfb4f377b02f", "timestamp": 1784580678.7998803, "event_type": "final_winner", "player": "Heuristic0"}

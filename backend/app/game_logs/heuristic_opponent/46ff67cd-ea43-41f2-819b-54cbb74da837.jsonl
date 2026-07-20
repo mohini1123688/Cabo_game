@@ -1,0 +1,11 @@
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0570133, "event_type": "game_start", "seed": 674502378}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0573196, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 9, "card2_suit": "Spade", "card3_value": 11, "card3_suit": "Club"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0574272, "event_type": "initial_reveal", "player": "Random1", "card2_value": 4, "card2_suit": "Diamond", "card3_value": 13, "card3_suit": "Spade"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0577967, "event_type": "initial_reveal", "player": "Random2", "card2_value": 5, "card2_suit": "Heart", "card3_value": 6, "card3_suit": "Heart"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0578334, "event_type": "initial_reveal", "player": "Random3", "card2_value": 10, "card2_suit": "Heart", "card3_value": 11, "card3_suit": "Spade"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.057846, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.057874, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 12, "drawn_card_suit": "Spade"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0578947, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 2, "discarded_card_suit": "Spade", "new_own_card_value": 12, "new_own_card_suit": "Spade", "swapped_index": 2}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0579164, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0580351, "event_type": "called_cabo", "player": "Random1"}
+{"game_id": "46ff67cd-ea43-41f2-819b-54cbb74da837", "timestamp": 1784580678.0581372, "event_type": "final_winner", "player": "Random2"}

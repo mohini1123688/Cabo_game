@@ -1,0 +1,11 @@
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7929928, "event_type": "game_start", "seed": 860781761}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.793129, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 8, "card2_suit": "Heart", "card3_value": 7, "card3_suit": "Club"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.793167, "event_type": "initial_reveal", "player": "Random1", "card2_value": 7, "card2_suit": "Heart", "card3_value": 4, "card3_suit": "Heart"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7933073, "event_type": "initial_reveal", "player": "Random2", "card2_value": 3, "card2_suit": "Heart", "card3_value": 10, "card3_suit": "Heart"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7933311, "event_type": "initial_reveal", "player": "Random3", "card2_value": 6, "card2_suit": "Club", "card3_value": 4, "card3_suit": "Club"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7933407, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7933578, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 9, "drawn_card_suit": "Club"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7933812, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 3, "discarded_card_suit": "Diamond", "new_own_card_value": 9, "new_own_card_suit": "Club", "swapped_index": 2}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7934067, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7934172, "event_type": "called_cabo", "player": "Random1"}
+{"game_id": "4f3807f2-8d04-492d-bec8-a5a7f5a9728a", "timestamp": 1784580679.7934306, "event_type": "final_winner", "player": "Random3"}

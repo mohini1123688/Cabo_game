@@ -1,0 +1,44 @@
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9890027, "event_type": "game_start", "seed": 400186562}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9891298, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 9, "card2_suit": "Club", "card3_value": 11, "card3_suit": "Spade"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9891734, "event_type": "initial_reveal", "player": "Random1", "card2_value": 1, "card2_suit": "Club", "card3_value": 3, "card3_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9893286, "event_type": "initial_reveal", "player": "Random2", "card2_value": 12, "card2_suit": "Heart", "card3_value": 1, "card3_suit": "Heart"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9893577, "event_type": "initial_reveal", "player": "Random3", "card2_value": 13, "card2_suit": "Heart", "card3_value": 13, "card3_suit": "Spade"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9893687, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9893858, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 7, "drawn_card_suit": "Club"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9894078, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 1, "discarded_card_suit": "Spade", "new_own_card_value": 7, "new_own_card_suit": "Club", "swapped_index": 2}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989435, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9894474, "event_type": "player_pick_up", "player": "Random1", "drawn_card_value": 11, "drawn_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9894578, "event_type": "player_discard", "player": "Random1", "discarded_card_value": 11, "discarded_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9894738, "event_type": "player_found_own_match", "player": "Heuristic0", "card_discarded_value": 11, "card_discarded_suit": "Spade"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9894853, "event_type": "current_player_turn", "player": "Random2"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9894936, "event_type": "player_pick_up", "player": "Random2", "drawn_card_value": 4, "drawn_card_suit": "Heart"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895022, "event_type": "player_discard", "player": "Random2", "discarded_card_value": 4, "discarded_card_suit": "Heart"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895153, "event_type": "current_player_turn", "player": "Random3"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895244, "event_type": "player_pick_up", "player": "Random3", "drawn_card_value": 6, "drawn_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895344, "event_type": "player_discard", "player": "Random3", "discarded_card_value": 6, "discarded_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895475, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895573, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 13, "drawn_card_suit": "Club"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895709, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 10, "discarded_card_suit": "Spade", "new_own_card_value": 13, "new_own_card_suit": "Club", "swapped_index": 2}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9895875, "event_type": "power_time_activated", "player": "Heuristic0"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989814, "event_type": "player_viewed_opponent", "player": "Heuristic0", "card_viewed_value": 8, "card_viewed_suit": "Spade", "opponent": 2}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9898586, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989874, "event_type": "player_pick_up", "player": "Random1", "drawn_card_value": 13, "drawn_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989883, "event_type": "player_discard", "player": "Random1", "discarded_card_value": 13, "discarded_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9898977, "event_type": "player_found_own_match", "player": "Heuristic0", "card_discarded_value": 13, "card_discarded_suit": "Club"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9899085, "event_type": "current_player_turn", "player": "Random2"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9899173, "event_type": "player_pick_up", "player": "Random2", "drawn_card_value": 8, "drawn_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9899251, "event_type": "player_discard", "player": "Random2", "discarded_card_value": 8, "discarded_card_suit": "Diamond"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989938, "event_type": "player_found_opponent_match", "player": "Heuristic0", "card_discarded_value": 8, "card_discarded_suit": "Spade", "opponent": "Random2"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989954, "event_type": "player_give_card_to_opponent", "player": "Heuristic0", "card_given_value": 9, "card_given_suit": "Club", "opponent": "Random2"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9899642, "event_type": "current_player_turn", "player": "Random3"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.989972, "event_type": "player_pick_up", "player": "Random3", "drawn_card_value": 3, "drawn_card_suit": "Spade"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9899821, "event_type": "player_discard", "player": "Random3", "discarded_card_value": 3, "discarded_card_suit": "Spade"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9899955, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900095, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 6, "drawn_card_suit": "Club"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.990023, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 7, "discarded_card_suit": "Club", "new_own_card_value": 6, "new_own_card_suit": "Club", "swapped_index": 0}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900434, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900517, "event_type": "player_pick_up", "player": "Random1", "drawn_card_value": 11, "drawn_card_suit": "Club"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900596, "event_type": "player_discard", "player": "Random1", "discarded_card_value": 11, "discarded_card_suit": "Club"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900713, "event_type": "current_player_turn", "player": "Random2"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900806, "event_type": "called_cabo", "player": "Random2"}
+{"game_id": "3b4238d6-cb0a-418e-acf0-14560ec7b570", "timestamp": 1784580678.9900932, "event_type": "final_winner", "player": "Heuristic0"}

@@ -8,6 +8,8 @@ values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 class Card:
     value: int
     suit: str
+    owner: int = 5
+    seen_by: list = field(default_factory=list)
 
 @dataclass
 class Deck:
@@ -23,7 +25,7 @@ class Deck:
     def create_deck(self):
         for suit_type in suits:
             for value in values:
-                self.cards.append(Card(value, suit_type))
+                self.cards.append(Card(value, suit_type, 5))
     
     def shuffle_deck(self):
         shuffle_seed = random.Random(self.seed)

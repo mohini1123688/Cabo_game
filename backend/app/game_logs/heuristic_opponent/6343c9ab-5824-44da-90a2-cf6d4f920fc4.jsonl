@@ -1,0 +1,11 @@
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.884556, "event_type": "game_start", "seed": 1677355621}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8846805, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 8, "card2_suit": "Spade", "card3_value": 7, "card3_suit": "Diamond"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8847194, "event_type": "initial_reveal", "player": "Random1", "card2_value": 11, "card2_suit": "Heart", "card3_value": 5, "card3_suit": "Heart"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8849301, "event_type": "initial_reveal", "player": "Random2", "card2_value": 2, "card2_suit": "Heart", "card3_value": 13, "card3_suit": "Diamond"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.885013, "event_type": "initial_reveal", "player": "Random3", "card2_value": 5, "card2_suit": "Spade", "card3_value": 9, "card3_suit": "Diamond"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8850374, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8850553, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 1, "drawn_card_suit": "Diamond"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.885076, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 3, "discarded_card_suit": "Heart", "new_own_card_value": 1, "new_own_card_suit": "Diamond", "swapped_index": 2}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8851006, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8851118, "event_type": "called_cabo", "player": "Random1"}
+{"game_id": "6343c9ab-5824-44da-90a2-cf6d4f920fc4", "timestamp": 1784580678.8851264, "event_type": "final_winner", "player": "Heuristic0"}

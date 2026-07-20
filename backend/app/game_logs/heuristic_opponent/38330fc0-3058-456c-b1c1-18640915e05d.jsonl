@@ -1,0 +1,11 @@
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1799815, "event_type": "game_start", "seed": 1801473207}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1801074, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 6, "card2_suit": "Club", "card3_value": 7, "card3_suit": "Heart"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1801407, "event_type": "initial_reveal", "player": "Random1", "card2_value": 2, "card2_suit": "Spade", "card3_value": 4, "card3_suit": "Club"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1803596, "event_type": "initial_reveal", "player": "Random2", "card2_value": 9, "card2_suit": "Spade", "card3_value": 5, "card3_suit": "Club"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.180387, "event_type": "initial_reveal", "player": "Random3", "card2_value": 10, "card2_suit": "Diamond", "card3_value": 2, "card3_suit": "Diamond"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1803975, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1804132, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 1, "drawn_card_suit": "Spade"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.180431, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 5, "discarded_card_suit": "Heart", "new_own_card_value": 1, "new_own_card_suit": "Spade", "swapped_index": 2}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1804519, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1804605, "event_type": "called_cabo", "player": "Random1"}
+{"game_id": "38330fc0-3058-456c-b1c1-18640915e05d", "timestamp": 1784580678.1804724, "event_type": "final_winner", "player": "Random1"}

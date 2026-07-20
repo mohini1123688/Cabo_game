@@ -1,6 +1,6 @@
 import random
 from dataclasses import dataclass, field
-from bots import Player, Random_Opponent
+from bots import Player, Random_Opponent, Heuristic_Opponent
 from cards import Card, Deck
 from storage.logger import GameLogger
 
@@ -18,10 +18,10 @@ class Game_State:
 
     def __post_init__(self):
             self.players = [
-                Random_Opponent("Opponent0", self),
-                Random_Opponent("Opponent1", self),
-                Random_Opponent("Opponent2", self),
-                Random_Opponent("Opponent3", self)
+                Heuristic_Opponent("Heuristic0", self),
+                Random_Opponent("Random1", self),
+                Random_Opponent("Random2", self),
+                Random_Opponent("Random3", self)
             ]
 
     def draw_from_deck(self):
@@ -78,6 +78,18 @@ def turn(game_state):
     player = game_state.players[game_state.current_turn_player]
     player.play_turn()
     reaction_phase(game_state)
+
+    empty_hand_player = None
+    for p in game_state.players:
+        if len(p.hand) == 0:
+            empty_hand_player = p
+            break
+        
+    if empty_hand_player is not None:
+        game_state.game_winner = empty_hand_player.name
+        game_state.logger.log("empty_hand_win", player=empty_hand_player.name)
+        return
+    
     power_card_phase(game_state)
 
 def reaction_phase(game_state):
@@ -106,7 +118,7 @@ def main():
     while game_state.game_winner == "":
         current_index = game_state.current_turn_player
         current_player = game_state.players[current_index]
-        game_state.logger.log("curren_player_turn", player=current_player.name)
+        game_state.logger.log("current_player_turn", player=current_player.name)
 
         #print(f"\n--- Turn {game_state.current_turn_number}: {current_player.name} ---")
 
@@ -118,6 +130,9 @@ def main():
             break
 
         turn(game_state)
+
+        if game_state.game_winner != "":
+            break
 
         game_state.current_turn_player = (game_state.current_turn_player + 1) % 4
         if game_state.current_turn_player == 0:

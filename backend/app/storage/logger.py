@@ -5,7 +5,7 @@ import uuid
 
 
 class GameLogger:
-    def __init__(self, path="game_logs/random"):
+    def __init__(self, path="game_logs/heuristic_opponent"):
         os.makedirs(path, exist_ok=True)
         self.game_id = str(uuid.uuid4())
         self.filepath = os.path.join(path, f"{self.game_id}.jsonl")

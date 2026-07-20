@@ -1,0 +1,11 @@
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.081668, "event_type": "game_start", "seed": 629381432}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0817804, "event_type": "initial_reveal", "player": "Heuristic0", "card2_value": 1, "card2_suit": "Diamond", "card3_value": 9, "card3_suit": "Heart"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0818102, "event_type": "initial_reveal", "player": "Random1", "card2_value": 4, "card2_suit": "Heart", "card3_value": 13, "card3_suit": "Heart"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0819998, "event_type": "initial_reveal", "player": "Random2", "card2_value": 12, "card2_suit": "Club", "card3_value": 5, "card3_suit": "Heart"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.082036, "event_type": "initial_reveal", "player": "Random3", "card2_value": 11, "card2_suit": "Heart", "card3_value": 5, "card3_suit": "Club"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0820475, "event_type": "current_player_turn", "player": "Heuristic0"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0820622, "event_type": "player_pick_up", "player": "Heuristic0", "drawn_card_value": 2, "drawn_card_suit": "Heart"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.08208, "event_type": "player_swap_with_own", "player": "Heuristic0", "discarded_card_value": 6, "discarded_card_suit": "Heart", "new_own_card_value": 2, "new_own_card_suit": "Heart", "swapped_index": 2}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.082101, "event_type": "current_player_turn", "player": "Random1"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0821092, "event_type": "called_cabo", "player": "Random1"}
+{"game_id": "0b6d3891-d1a7-4fe1-8b41-7b5ae2550c2a", "timestamp": 1784580678.0821226, "event_type": "final_winner", "player": "Heuristic0"}
